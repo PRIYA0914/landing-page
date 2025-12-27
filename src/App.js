@@ -1,4 +1,10 @@
+
 import React from 'react';
+import Hero from './Hero';
+import About from './About';
+import Services from './Services';
+import WhyChooseUs from './WhyChooseUs';
+import CTA from './CTA';
 
 
 function App() {
@@ -14,10 +20,11 @@ function App() {
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <header className="App-header">
-        <h1>Welcome to Shrekium Technologies</h1>
-        <p>Innovating the future, one step at a time.</p>
-      </header>
+      <Hero />
+      <About />
+      <Services />
+      <WhyChooseUs />
+      <CTA />
     </div>
   );
 }
