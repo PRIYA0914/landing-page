@@ -2,7 +2,6 @@ import React from 'react';
 import Hero from './Hero';
 import About from './About';
 import Services from './Services';
-import Work from './Work';
 import WhyChooseUs from './WhyChooseUs';
 import CTA from './CTA';
 
@@ -25,7 +24,6 @@ function App() {
         <div className="fade-in"><Hero /></div>
         <div className="fade-in"><About /></div>
         <div className="fade-in"><Services /></div>
-        <div className="fade-in"><Work /></div>
         <div className="fade-in"><WhyChooseUs /></div>
         <div className="fade-in"><CTA /></div>
       </main>
