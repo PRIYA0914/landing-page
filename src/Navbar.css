@@ -78,14 +78,18 @@ body {
   transition: width 0.35s cubic-bezier(.4,0,.2,1);
 }
 
+
 .navbar-link:hover,
 .navbar-link:focus {
-  color: #1e3a8a;
+  color: #1976d2;
+  text-shadow: 0 2px 8px #b3d8fd;
 }
 
 .navbar-link:hover:after,
 .navbar-link:focus:after {
   width: 100%;
+  background: linear-gradient(90deg, #b3d8fd 0%, #1976d2 100%);
+  box-shadow: 0 0 8px #b3d8fd;
 }
 
 .navbar-link.active,
@@ -162,21 +166,36 @@ body {
     align-items: flex-start;
     transition: right 0.3s cubic-bezier(.4,0,.2,1);
   }
-  .navbar-links.active {
-    right: 0;
-    animation: navbar-slide-down 0.32s cubic-bezier(.4,0,.2,1);
+
+  .navbar-link.active,
+  .navbar-link[aria-current='page'] {
+    color: #1976d2;
+    font-weight: 700;
+    text-shadow: 0 2px 8px #b3d8fd;
   }
-  .navbar-links li {
+
+  .navbar-link.active:after,
+  .navbar-link[aria-current='page']:after {
     width: 100%;
-    margin: 0;
-    padding: 0;
+    background: linear-gradient(90deg, #b3d8fd 0%, #1976d2 100%);
+    box-shadow: 0 0 8px #b3d8fd;
   }
+
   .navbar-links li a {
-    display: block;
     width: 100%;
     padding: 16px 32px;
     font-size: 1.13rem;
     border-radius: 0;
+    color: #1976d2;
+    background: transparent;
+    transition: background 0.3s, color 0.3s;
+  }
+  .navbar-links li a:hover,
+  .navbar-links li a.active,
+  .navbar-links li a[aria-current='page'] {
+    background: #e9f3f9;
+    color: #1565c0;
+    text-shadow: 0 2px 8px #b3d8fd;
   }
   .navbar-toggle {
     display: flex;

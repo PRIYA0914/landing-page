@@ -15,28 +15,12 @@ const illustration = (
 
 const About = () => {
   return (
-    <section
-      id="about"
-      className="about-section"
-      style={{
-        margin: 0,
-        padding: 0,
-        width: '100%',
-        minHeight: '420px',
-        background: '#fff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderBottom: 'none',
-        position: 'relative',
-        overflow: 'hidden',
-      }}
-    >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', maxWidth: 1100, padding: '0 2.5rem', gap: 56 }}>
-        <div style={{ flex: '0 1 340px', display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 220, zIndex: 1, maxWidth: 340 }}>
+    <section id="about" className="about-section">
+      <div className="finpay-grid" style={{ alignItems: 'center', maxWidth: 1100, margin: '0 auto', padding: '0 2.5rem' }}>
+        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 220, zIndex: 1, maxWidth: 340 }}>
           {illustration}
         </div>
-        <div style={{ flex: '1 1 420px', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', color: '#222b45', zIndex: 2, minWidth: 320, maxWidth: 500, height: '100%', padding: '0 0 0 12px' }}>
+        <div className="finpay-card" style={{ color: '#222b45', zIndex: 2, minWidth: 320, maxWidth: 500, height: '100%' }}>
           <div style={{ position: 'relative', width: '100%', marginBottom: 22 }}>
             <h2 style={{ fontSize: '2.1rem', fontWeight: 900, letterSpacing: 1.2, color: '#222b45', lineHeight: 1.1, display: 'inline-block', position: 'relative', background: 'none', margin: 0, padding: 0, zIndex: 2, maxWidth: 480 }}>
               About <span className="glow-accent" style={{ position: 'relative', zIndex: 2 }}>Us</span>

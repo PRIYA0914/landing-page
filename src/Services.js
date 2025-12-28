@@ -15,49 +15,43 @@ const illustration = (
 
 const Services = () => {
   const services = [
-    { title: 'Web Development', desc: 'Modern, responsive websites and web apps.' },
-    { title: 'UI/UX Design', desc: 'Clean, user-focused interfaces and experiences.' },
-    { title: 'Cloud Solutions', desc: 'Scalable, secure cloud integrations.' },
-    { title: 'Consulting', desc: 'Expert advice for your digital journey.' },
+  {
+    title: "Web Development",
+    description: "Modern, responsive websites and web apps tailored to your business needs.",
+    icon: "🌐",
+  },
+  {
+    title: "UI/UX Design",
+    description: "Beautiful, user-centric interfaces and experiences that delight your users.",
+    icon: "🎨",
+  },
+  {
+    title: "Branding",
+    description: "Distinctive branding and identity design to make your business stand out.",
+    icon: "🚀",
+  },
+  {
+    title: "SEO & Marketing",
+    description: "Boost your online presence and reach your audience with smart SEO and marketing.",
+    icon: "📈",
+  },
   ];
   return (
-    <section
-      id="services"
-      className="services-section"
-      style={{
-        margin: 0,
-        padding: 0,
-        width: '100%',
-        minHeight: '420px',
-        background: '#fff',
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        borderBottom: 'none',
-        position: 'relative',
-        overflow: 'hidden',
-      }}
-    >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', width: '100%', maxWidth: 1100, padding: '0 2.5rem', gap: 48 }}>
-        <div style={{ flex: 1, display: 'flex', alignItems: 'center', justifyContent: 'center', minWidth: 220, zIndex: 1, maxWidth: 340 }}>
-          {illustration}
+    <section id="services" className="services-section finpay-bg-light" style={{padding: '0', marginBottom: 48}}>
+      <div className="finpay-grid" style={{alignItems: 'flex-start', gap: 0}}>
+        <div style={{padding: '48px 36px 48px 48px'}}>
+          <h2 style={{marginBottom: 18, color: '#1976d2', fontWeight: 900}}>Our Services</h2>
+          <p style={{color: '#1565c0', fontSize: '1.13rem', marginBottom: 0, background: 'none', padding: 0}}>We offer a full suite of digital services to help your business grow and thrive online.</p>
         </div>
-        <div style={{ flex: 1.1, display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'flex-start', color: '#222b45', zIndex: 2, paddingLeft: 0, minWidth: 320, maxWidth: 500, height: '100%' }}>
-          <div style={{ position: 'relative', width: '100%', marginBottom: 22 }}>
-            <h2 style={{ fontSize: '2.1rem', fontWeight: 900, letterSpacing: 1.2, color: '#222b45', lineHeight: 1.1, display: 'inline-block', position: 'relative', background: 'none', margin: 0, padding: 0, zIndex: 2, maxWidth: 480 }}>
-              Our <span className="glow-accent" style={{ position: 'relative', zIndex: 2 }}>Services</span>
-            </h2>
-            <span style={{ display: 'block', width: '140px', height: 10, background: '#ffe082', position: 'absolute', left: 0, bottom: 6, zIndex: 1, borderRadius: 6, opacity: 0.7 }}></span>
-          </div>
-          <div style={{ width: '100%' }}>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem', width: '100%' }}>
-              {services.map((s, i) => (
-                <div key={i} className="neon-card" style={{ padding: '1.5rem 1rem', background: '#fff', textAlign: 'center', borderRadius: 14, boxShadow: '0 2px 12px #e0e7ef' }}>
-                  <h3 style={{ color: '#2563eb', fontSize: '1.08rem', marginBottom: '0.7rem', fontWeight: 600 }}>{s.title}</h3>
-                  <p style={{ color: '#4b5563', fontSize: '0.98rem', margin: 0 }}>{s.desc}</p>
-                </div>
-              ))}
-            </div>
+        <div style={{width: '100%', padding: '36px 36px 36px 0'}}>
+          <div className="finpay-grid" style={{gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 32}}>
+            {services.map((service, idx) => (
+              <div key={idx} className="finpay-card" style={{display: 'flex', flexDirection: 'column', alignItems: 'flex-start', gap: 12, minHeight: 180, boxShadow: '0 2px 12px rgba(25, 118, 210, 0.06)'}}>
+                <span style={{ fontSize: "2.3rem", marginBottom: 8 }}>{service.icon}</span>
+                <div style={{fontWeight: 700, fontSize: '1.18rem', color: '#1976d2', marginBottom: 2}}>{service.title}</div>
+                <div style={{color: '#1565c0', fontSize: '1.05rem', lineHeight: 1.6}}>{service.description}</div>
+              </div>
+            ))}
           </div>
         </div>
       </div>

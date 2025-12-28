@@ -57,7 +57,7 @@ const Navbar = () => {
 
   return (
     <header className="navbar-header">
-      <nav className="navbar">
+      <nav className="navbar finpay-navbar">
         <div className="navbar-logo">Shrekium</div>
         <button
           className={`navbar-toggle${menuOpen ? " open" : ""}`}
