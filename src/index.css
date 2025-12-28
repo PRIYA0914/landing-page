@@ -1,6 +1,284 @@
+/* Modern Blue Navbar */
+.navbar-modern {
+  background: linear-gradient(90deg, #1565c0 0%, #1976d2 100%);
+  box-shadow: 0 4px 24px rgba(21, 101, 192, 0.10);
+  border-bottom: none;
+  border-radius: 0 0 18px 18px;
+  padding: 18px 48px 18px 48px;
+}
+.navbar-modern .navbar-logo {
+  color: #fff !important;
+  font-weight: 900;
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  text-shadow: 0 2px 8px rgba(21,101,192,0.10);
+}
+.navbar-modern .navbar-links li a {
+  color: #e3f2fd;
+  background: none;
+  font-weight: 700;
+  border-radius: 6px;
+  padding: 8px 16px;
+  transition: background 0.18s, color 0.18s;
+}
+.navbar-modern .navbar-links li a:hover, .navbar-modern .navbar-links li a.active {
+  background: #fff;
+  color: #1565c0 !important;
+}
+.navbar-modern .navbar-links .navbar-btn {
+  background: #fff;
+  color: #1565c0 !important;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1.18rem;
+  padding: 14px 36px;
+  margin-left: 40px;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.10);
+  border: none;
+  transition: background 0.18s, color 0.18s;
+}
+.navbar-modern .navbar-links .navbar-btn:hover {
+  background: #e3f2fd;
+  color: #003c8f !important;
+}
+/* Blue and White Theme */
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+  background: linear-gradient(120deg, #b3d8fd 0%, #e9f3f9 100%);
+  min-height: 100vh;
+}
+
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+#root {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.main-container, #main-app-container {
+  margin: 0 auto 0 auto !important;
+  padding: 0 !important;
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(0,40,120,0.10);
+  background: #fff;
+  max-width: 1200px;
+  min-height: 80vh;
+  position: relative;
+}
+
+a {
+  color: #1565c0;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #003c8f;
+}
+
+header, nav, .navbar, .hero, .cta, .services, .about, .why-choose-us, .work, footer {
+  background: #ffffff;
+  color: #0a2540;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.06);
+  margin-bottom: 24px;
+  padding: 24px;
+}
+
+button, .btn, input[type="submit"] {
+  background: #1565c0;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+button:hover, .btn:hover, input[type="submit"]:hover {
+  background: #003c8f;
+}
+
+section {
+  margin: 32px 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #1565c0;
+  margin-top: 0;
+}
+
+.hero {
+  background: linear-gradient(90deg, #e3f2fd 0%, #bbdefb 100%);
+  text-align: center;
+  padding: 64px 24px;
+}
+
+.cta {
+  background: #1565c0;
+  color: #fff;
+  text-align: center;
+  padding: 48px 24px;
+  border-radius: 16px;
+}
+
+.services, .about, .why-choose-us, .work {
+  background: #fff;
+  color: #0a2540;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(21, 101, 192, 0.06);
+}
+
+.service-card, .work-card {
+  background: #e3f2fd;
+  border-radius: 8px;
+  padding: 24px;
+  margin: 16px 0;
+  box-shadow: 0 1px 4px rgba(21, 101, 192, 0.04);
+}
+
+footer {
+  background: #1565c0;
+  color: #fff;
+  text-align: center;
+  padding: 24px 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+/* Utility classes */
+.text-blue {
+  color: #1565c0 !important;
+}
+.bg-blue {
+  background: #1565c0 !important;
+  color: #fff !important;
+}
+.border-blue {
+  border: 1px solid #1565c0 !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  header, nav, .navbar, .hero, .cta, .services, .about, .why-choose-us, .work, footer {
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .hero {
+    padding: 32px 8px;
+  }
+  .cta {
+    padding: 24px 8px;
+  }
+}
+/* --- NAVBAR STYLES --- */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff; 
+  box-shadow: 0 4px 24px rgba(60,60,60,0.07);
+  border-bottom: 2px solid #f2f2f2;
+  border-radius: 0;
+  margin: 0;
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 18px 48px 18px 48px;
+  min-height: 72px;
+}
+
+.navbar-logo {
+  color: #222;
+  font-size: 2.3rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: 'Inter', 'Segoe UI', Arial, Helvetica, sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 0 0 0;
+  background: none;
+  box-shadow: none;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 44px;
+  margin: 0 0 0 60px;
+  padding: 0;
+  align-items: center;
+}
+
+/* Nav links modern look */
+.navbar-links li a {
+  color: #232323;
+  background: none;
+  text-decoration: none;
+  font-size: 1.18rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 0 8px 0 8px;
+  border-radius: 0;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 1;
+  border: none;
+  box-shadow: none;
+  transition: color 0.18s;
+}
+.navbar-links li a.active, .navbar-links li a:active {
+  color: #ff375b;
+  letter-spacing: 1.2px;
+}
+.navbar-links li a.active::after, .navbar-links li a:active::after {
+    color: #1976d2;
+  display: block;
+  margin: 6px auto 0 auto;
+  width: 60%;
+  height: 3px;
+  background: #ff375b;
+  border-radius: 2px;
+}
+.navbar-links .navbar-btn {
+    background: #1976d2;
+  color: #fff !important;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1.18rem;
+  padding: 14px 56px;
+  margin-left: 60px;
+  box-shadow: 0 2px 8px rgba(255, 55, 91, 0.10);
+  border: none;
+  transition: background 0.18s, color 0.18s;
+}
+/* --- END NAVBAR STYLES --- */
 /* Animation for fade-in effect */
 .fade-in {
   opacity: 0;
+  .navbar-links .navbar-btn {
+    background: #1976d2;
+    color: #fff !important;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 1.18rem;
+    padding: 14px 56px;
+    margin-left: 60px;
+    box-shadow: 0 2px 8px rgba(25, 118, 210, 0.10);
+    border: none;
+    transition: background 0.18s, color 0.18s;
+  }
   transform: translateY(40px);
   animation: fadeInUp 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
