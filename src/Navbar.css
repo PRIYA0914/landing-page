@@ -1,13 +1,18 @@
-/* Modern Blue & White Navbar for Software Company */
+/* Modern Blue & White Sticky Navbar for Tech Startup */
+
+body {
+  padding-top: 0;
+  margin: 0;
+  background: linear-gradient(120deg, #b3d8fd 0%, #e9f3f9 100%);
+}
 
 .navbar-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 2000;
   background: transparent;
-  margin: 0;
 }
 
 .navbar {
@@ -15,34 +20,18 @@
   align-items: center;
   justify-content: space-between;
   background: #fff;
-  box-shadow: 0 2px 16px 0 #e9f3f9;
+  box-shadow: 0 2px 16px 0 #e9f3f9, 0 4px 0 0 #3b82f6;
   border-radius: 0;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 100;
+  z-index: 2000;
   margin: 0;
-  padding-top: 0;
-  padding-bottom: 0rem;
   padding: 0 32px;
   min-height: 68px;
   font-family: 'Segoe UI', Arial, sans-serif;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  padding-top: 64px;
-}
-
-@media (max-width: 600px) {
-  .navbar {
-    padding: 0.5rem 0.5rem;
-  }
-  body {
-    padding-top: 56px;
-  }
+  border-bottom: 2px solid #3b82f6;
 }
 
 .navbar-logo {
@@ -123,7 +112,7 @@ body {
   border: none;
   cursor: pointer;
   margin-left: 16px;
-  z-index: 1100;
+  z-index: 2100;
 }
 
 .navbar-toggle-bar {
@@ -220,4 +209,8 @@ body {
     margin: 0;
     border-radius: 0;
   }
+}
+
+.section-wrapper {
+  margin-bottom: -10px;
 }

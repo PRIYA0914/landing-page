@@ -15,14 +15,12 @@
 }
 
 body {
-  font-family: 'Inter', 'DM Sans', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background: linear-gradient(120deg, #b3d8fd 0%, #e9f3f9 100%);
-  color: #222b45;
   min-height: 100vh;
-  margin: 0 !important;
-  padding: 0 !important;
-  overflow-x: hidden;
-  box-sizing: border-box;
+  font-family: 'Inter', 'DM Sans', Arial, sans-serif;
+  color: #222b45;
 }
 
 html {
@@ -41,11 +39,12 @@ html {
   border-radius: 22px;
   box-shadow: 0 8px 40px 0 rgba(30, 64, 175, 0.18), 0 1.5px 8px 0 #b3d8fd;
   max-width: 1200px;
-  margin: 0 auto 0 auto !important;
+  margin: 32px auto 32px auto;
   padding: 0 !important;
   min-height: 80vh;
   position: relative;
   overflow: hidden;
+  padding-top: 68px; /* Offset for fixed navbar */
 }
 
 main {
@@ -64,7 +63,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 section {
-  margin-bottom: 2.5rem;
+  margin: 0;
+  padding: 0;
 }
 
 ::-webkit-scrollbar {
@@ -77,21 +77,26 @@ section {
   box-shadow: none;
 }
 
+/* Remove margin and padding from neon-card for flush sections */
 .neon-card {
   border-radius: 14px;
   background: #fff;
   box-shadow: 0 2px 16px 0 #e9f3f9;
   border: 1px solid #e0e7ef;
   transition: box-shadow 0.2s, border 0.2s;
+  margin: 0;
+  padding: 0;
 }
 .neon-card:hover {
   box-shadow: 0 4px 24px 0 #dbeafe;
   border-color: #b6c7d6;
 }
 
-.neon-text, .glow-accent {
-  color: #2563eb;
-  text-shadow: none;
+.neon-text {
+  color: #3b82f6;
+  text-shadow:
+    0 0 5px rgba(59,130,246,0.6),
+    0 0 15px rgba(59,130,246,0.4);
 }
 
 a {
@@ -119,6 +124,34 @@ a:hover {
   background: #e9f3f9;
   color: #1e3a8a;
   border-color: #b6c7d6;
+}
+
+footer {
+  width: 100%;
+  background: #f3f7fd;
+  color: #2563eb;
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+  font-size: 1rem;
+  border-top: 1.5px solid #e0e7ef;
+  margin-top: 2rem;
+  letter-spacing: 0.5px;
+}
+
+footer .footer-links {
+  margin: 0.5rem 0 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+footer .footer-links a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+footer .footer-links a:hover {
+  color: #1e3a8a;
 }
 
 @media (max-width: 900px) {
@@ -163,13 +196,4 @@ a:hover {
   transform: translateY(0);
 }
 
-.navbar {
-  border-radius: 0;
-  position: static;
-  top: unset;
-  left: unset;
-  width: 100%;
-  z-index: 100;
-  margin: 0;
-  box-shadow: none;
-}
+
